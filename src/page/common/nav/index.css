@@ -1,0 +1,32 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-19 21:25:00
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-19 22:04:42
+*/
+.nav
+{
+	background: #eee;
+	height: 30px;
+	line-height: 30px;
+}
+/**
+ * 用户部分
+ */
+.nav .user-info
+{
+	float:left;
+}
+.nav ul
+{
+	float:right;
+}
+.nav .user.login/*两个属性连接在一起写表示一个元素中的两个不同的class*/
+{
+	display:none;
+}
+.nav .nav-item
+{
+	display:inline-block;
+	margin-left:5px;
+}

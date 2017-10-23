@@ -1,0 +1,30 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-22 18:16:51
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-22 20:02:09
+*/
+/*
+导航主题
+ */
+.nav-side
+{
+	float:left;
+	width:130px;
+	min-height: 100px;
+}
+
+.nav-side .nav-item
+{
+	line-height: 25px;
+	font-size: 13px;
+
+}
+.nav-side .nav-item .link
+{
+	color:#888;
+}
+.nav-side .nav-item.active .link
+{
+	color:#c60023;
+}

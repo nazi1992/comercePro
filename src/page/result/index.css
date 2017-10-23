@@ -1,0 +1,30 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-23 19:59:35
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-23 21:02:53
+*/
+.page-wrap
+{
+	text-align: center;
+	padding: 20px 0px;
+}
+.result-con .result-title
+{
+	font-weight: bold;
+	font-family: '微软雅黑';
+
+}
+.result-con .result-content
+{
+	margin-top:20px;
+}
+.result-con .result-content .link
+{
+	border:solid #666 1px;
+	padding: 5px;
+}
+.result-con
+{
+	display: none;
+}

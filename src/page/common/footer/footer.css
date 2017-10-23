@@ -1,0 +1,25 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-22 14:37:59
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-22 14:49:51
+*/
+.links
+{
+	text-align: center;
+}
+.links .link
+{
+	padding: 0px 10px;
+	color:#666;
+}
+.copyright
+{
+	text-align: center;
+	color:#666;
+
+}
+.links ,.copyright
+{
+	margin-bottom: 10px;
+}

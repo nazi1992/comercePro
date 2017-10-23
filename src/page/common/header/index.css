@@ -1,0 +1,42 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-19 21:25:00
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-22 17:45:09
+*/
+.header .logo
+{
+	color:#c60023;
+	font-size: 32px;
+	font-weight: bold;
+	position: absolute;
+	left:80px;
+	top:40px;
+	width:30px;
+	height:30px;
+	display: block;
+}
+.header .search-con
+{
+	padding: 40px 0 30px 250px;
+}
+.header .search-input
+{
+	width: 550px;
+	height: 38px;
+	border:2px solid red;
+	font-size: 20px;
+	outline: none;/*选中时的焦点外边框隐藏*/
+}
+.header .search-btn
+{
+	height: 42px;
+	position: absolute;
+	background: red;
+	color:#fff;
+	width:80px;
+	font-size:22px;
+	line-height: 42px;
+	text-align: center;
+}
+
