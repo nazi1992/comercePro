@@ -23,8 +23,9 @@ var getHtmlConfig = function(name,title)
 var config = {
      entry: {
      	'index':['./src/page/index/index.js'],
-     	'login':['./src/page/login/index.js'],//目标文件
-     	'common':['./src/page/common/index.js'],
+      'user-login':['./src/page/user-login/index.js'],//目标文件
+      'user-register':['./src/page/user-register/index.js'],//目标文件
+      'common':['./src/page/common/index.js'],
       'result':['./src/page/result/index.js']
 
 },
@@ -60,8 +61,11 @@ var config = {
      	}),//独立通用模块到js/base.js
      	new ExtractTextPlugin("css/[name].css"),//把css单独打包到文件里
      	new HtmlWebpackPlugin(getHtmlConfig('index','首页')),//html模板的处理
-      new HtmlWebpackPlugin(getHtmlConfig('login','用户登录')),//html模板的处理
+      new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),//html模板的处理
+       new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),//html模板的处理
+
       new HtmlWebpackPlugin(getHtmlConfig('result','用户操作')),//html模板的处理
+
 
 
      ]//把代码中的一些公共文件提取出来形成一个单独的文件。

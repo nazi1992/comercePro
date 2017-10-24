@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-19 21:25:09
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-19 22:50:18
+* @Last Modified time: 2017-10-24 23:49:50
 */
 require('./index.css');
 var _mm = require('util/mm.js');
@@ -26,7 +26,7 @@ var nav = {
 		});
 		$('.js-register').click(function(){
 			//注册
-			window.location.href="./register.html"
+			window.location.href="./user-register.html"
 		});
 		$('.js-layout').click(function(){
 			//退出

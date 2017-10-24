@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-16 20:42:31
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-18 21:15:20
+* @Last Modified time: 2017-10-24 23:49:06
 */
 var conf = {
 	serverHost : ''
@@ -20,7 +20,7 @@ var _mm = {
 			{
 				if(0 === res.status)
 				{
-					typeof param.succuss ==='function' && param.success(res.data,res.msg);
+					typeof param.success ==='function' && param.success(res.data,res.msg);
 				}
 				//没有登录状态，需要登录
 				else if(10 === res.status)
@@ -35,6 +35,7 @@ var _mm = {
 			},
 			error:function(err)
 			{
+				console.info("faiol");
 
 				typeof param.error ==='function' && param.error(err.status);
 
@@ -66,7 +67,7 @@ var _mm = {
 	{
 		alert(msg||'哪里不对了-~');
 	},//字段的验证 ，支持非空，手机,邮箱的判断
-	validate :function(value,type)
+	validata :function(value,type)
 	{
 		var value = $.trim(value);
 		//非空验证
@@ -74,19 +75,19 @@ var _mm = {
 			return !!value;
 		}	
 		//手机号验证
-		if('require'===type)
+		if('phone'===type)
 		{
 			return /^1\d{10}$/.test(value);
 		}
 		//邮箱格式验证
-		if('require'===type)
+		if('email'===type)
 		{
 			return /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test(value);
 		} 
 	},
 	//统一登录处理
 	doLogin:function(){
-		window.location.href='./login.html?redirect='+encodeURIComponent(window.location.href);
+		window.location.href='./user-login.html?redirect='+encodeURIComponent(window.location.href);
 	},//跳转回主页
 	goHome:function()
 	{
