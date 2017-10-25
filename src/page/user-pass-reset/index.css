@@ -1,0 +1,114 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-23 21:39:32
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-25 23:51:09
+*/
+.user-login
+{
+	background: #e72955;
+
+	padding: 50px 0px;
+}
+.user-login .login-icon
+{
+	margin: 0 auto; 
+	padding-top: 10px;
+	width:480px;
+	text-align: center;
+	background: #fff;
+	padding-bottom: 10px;
+	
+	
+}
+.login-icon .login-title
+{
+	font-size: 30px;
+	font-family: '微软雅黑';
+	font-weight: bold;
+	padding:10px;
+	color:#666;
+}
+.login-icon .step-con
+{
+	display: none;
+}
+.step-con .user-item-text
+{
+	text-align: left;
+	padding-left:11px; 
+	font-size: 15px;
+    font-family: '微软雅黑';
+
+}
+.login-icon .error-item
+{
+	position: relative;
+	background: #fde9e9;
+	border:solid 1px red;
+	width: 422px;
+	margin-left:38px;
+	display: none;
+ 
+}
+.login-icon .error-icon
+{
+	position: absolute;
+	left:0px;
+	top:1px;
+}
+.login-icon .errorMsg
+{
+	color:red;
+	font-family: '微乳雅黑';
+	margin-left:10px;
+}
+.login-username, .login-password
+{
+	width: 420px;
+	height: 32px;
+	font-size:20px;
+	outline: none;
+	margin: 10px auto;
+	border:#666 1px solid;
+}
+.login-icon .other-option
+{
+	text-align: right;
+	padding-right: 17px;
+	margin-bottom:0px;
+}
+.login-icon .lable-pass
+{
+	
+	padding-right: 1px;
+}
+.login-icon .btn
+{
+	font-family: '微软雅黑';
+	font-size:20px;
+	margin-top:15px;
+	margin-bottom: 20px;
+	width:413px;
+}
+.user-item .fa
+{
+	width:30px;
+	height: 32px;
+	border:1px solid #666;
+	padding-right: 0px;
+	margin: 0px;
+	line-height: 34px
+
+
+}
+.user-item .lable-user
+{
+	display: inline-block;
+	width:23px;
+}
+.user-item .lable-pass
+{
+	display: inline-block;
+	width:22px;
+}

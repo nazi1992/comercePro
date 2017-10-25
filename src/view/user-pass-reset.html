@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<%=require('html-loader!./layout/head-common.html')%>
+<title><%=htmlWebpackPlugin.options.title%>--happymmall电商平台</title>
+</head>
+<body>
+	<%=require('html-loader!./layout/nav-simple.html')%>
+
+
+<div class="page-wrap">
+	<div class="w">
+		<div class="user-login">
+				<div class="login-icon">
+					<div class="login-title">找回密码</div>
+					<div class="login-content">
+						<div class="error-item">
+							<i class="fa fa-minus-circle error-icon"></i>
+							<p class="errorMsg">ERROR</p>
+						</div>
+						<div class="step-con  step-username">
+							<p class="user-item-text">请输入账号</p>
+								<div class="user-item">
+									<label for="reset-username" class="lable-user">
+										<i class="fa fa-user"></i>
+									</label>
+									<input type="text" id="reset-username" class="login-username" placeholder="请输入账号" autocomplete="off">
+								</div>
+							<a class="btn" id="submit-username">下一步</a>
+						</div>
+						<div class="step-con  step-question">
+							<p class="user-item-text">密码提示问题是：
+							<span class="question"></span></p>
+								<div class="user-item">
+									<label for="reset-answer" class="lable-user">
+										<i class="fa fa-key"></i>
+									</label>
+									<input type="text" id="reset-answer" class="login-username" placeholder="请输入提示问题答案" autocomplete="off">
+								</div>
+							<a class="btn" id="submit-question">下一步</a>
+
+						</div>
+						<div class="step-con  step-password">
+							<p class="user-item-text">请输入密码</p>
+								<div class="user-item">
+									<label for="reset-password" class="lable-user">
+										<i class="fa fa-lock"></i>
+									</label>
+									<input type="password" id="reset-password" class="login-username" placeholder="请输入新密码" autocomplete="off">
+								</div>
+							<a class="btn" id="submit-password">下一步</a>
+
+						</div>
+						<div class="other-option">
+							<a href="./user-login.html" class="link" target="_blank" >返回登录</a>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+<%=require('html-loader!./layout/footer.html')%>
+
+</body>
+</html> 

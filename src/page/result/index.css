@@ -2,22 +2,23 @@
 * @Author: Administrator
 * @Date:   2017-10-23 19:59:35
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-23 22:03:30
+* @Last Modified time: 2017-10-25 23:45:57
 */
 .page-wrap
 {
 	text-align: center;
-	padding: 20px 0px;
+	margin-bottom: 10px;
+	
 }
 .result-con .result-title
 {
 	font-weight: bold;
-	font-family: '微软雅黑';
+	font-family: '微软雅黑'; 
 
 }
 .result-con .result-content
 {
-	margin-top:20px;
+	margin-top:15px;
 }
 .result-con .result-content .link
 {
@@ -27,5 +28,5 @@
 .result-con
 {
 	display: none;
-	margin:0 auto;
+	margin-bottom: 15px; 
 }

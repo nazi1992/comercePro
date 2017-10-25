@@ -25,6 +25,8 @@ var config = {
      	'index':['./src/page/index/index.js'],
       'user-login':['./src/page/user-login/index.js'],//目标文件
       'user-register':['./src/page/user-register/index.js'],//目标文件
+      'user-pass-reset':['./src/page/user-pass-reset/index.js'],//找回密码
+
       'common':['./src/page/common/index.js'],
       'result':['./src/page/result/index.js']
 
@@ -65,6 +67,7 @@ var config = {
        new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),//html模板的处理
 
       new HtmlWebpackPlugin(getHtmlConfig('result','用户操作')),//html模板的处理
+      new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset','找回密码')),//html模板的处理
 
 
 

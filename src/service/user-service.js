@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-19 22:34:02
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-24 23:11:42
+* @Last Modified time: 2017-10-25 22:39:23
 */
 var _mm = require('util/mm.js');
 var _user = {
@@ -24,6 +24,37 @@ var _user = {
 				type:'username',
 				str:username
 			},
+			success:resolve,
+			error:reject
+		});
+	},//获取用户密码提示问题
+	getQuestion:function(username,resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/user/forget_get_question.do'),
+			method:'POST',
+			data:{
+				username:username
+			},
+			success:resolve,
+			error:reject
+		});
+	},
+	//检查密码提示问题答案
+	checkAnswer:function(userInfo,resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/user/forget_check_answer.do'),
+			method:'POST',
+			data:userInfo,
+			success:resolve,
+			error:reject
+		});
+	},
+	//重置密码提交
+	resetPassword:function(userInfo,resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/user/forget_reset_password.do'),
+			method:'POST',
+			data:userInfo,
 			success:resolve,
 			error:reject
 		});
