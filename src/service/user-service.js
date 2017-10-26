@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-19 22:34:02
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-25 22:39:23
+* @Last Modified time: 2017-10-26 23:50:00
 */
 var _mm = require('util/mm.js');
 var _user = {
@@ -69,9 +69,28 @@ var _user = {
 			error:reject
 		});
 	},
+	//更新个人信息
+	updateUserInfo:function(userInfo,resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/user/update_information.do'),
+			method:'POST',
+			data:userInfo,
+			success:resolve,
+			error:reject
+		});
+	},
 	logout:function(resolve,reject){
 		_mm.request({
 			url:_mm.getServerUrl('/user/logout.do'),
+			method:'POST',
+			success:resolve, 
+			error:reject
+		});
+	},
+	//.获取用户信息
+	getUserInfo:function(resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/user/get_information.do'),
 			method:'POST',
 			success:resolve,
 			error:reject

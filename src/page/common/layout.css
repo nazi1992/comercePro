@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-18 21:17:17
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-19 21:15:55
+* @Last Modified time: 2017-10-26 21:43:13
 */
 /**
  * css retset ，把浏览器通用的元素祛除
@@ -42,6 +42,24 @@ input[type='checkbox']
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;/*超出边界的元素不显示,也可以清除浮动，浮动的子元素会撑开父元素*/
+}
+/*panel*/
+.panel{
+	padding: 10px;
+	background: #fff;
+}
+.panel .panel-title
+{
+	padding: 10px;
+	font-style: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body
+{
+	padding: 10px;
+	overflow: hidden;
 }
 /*全局通用样式*/
 /*隐藏类*/

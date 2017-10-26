@@ -26,6 +26,8 @@ var config = {
       'user-login':['./src/page/user-login/index.js'],//目标文件
       'user-register':['./src/page/user-register/index.js'],//目标文件
       'user-pass-reset':['./src/page/user-pass-reset/index.js'],//找回密码
+      'user-center':['./src/page/user-center/index.js'],//个人信息
+      'user-center-update':['./src/page/user-center-update/index.js'],//个人信息
 
       'common':['./src/page/common/index.js'],
       'result':['./src/page/result/index.js']
@@ -64,10 +66,11 @@ var config = {
      	new ExtractTextPlugin("css/[name].css"),//把css单独打包到文件里
      	new HtmlWebpackPlugin(getHtmlConfig('index','首页')),//html模板的处理
       new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),//html模板的处理
-       new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),//html模板的处理
-
+      new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),//html模板的处理
       new HtmlWebpackPlugin(getHtmlConfig('result','用户操作')),//html模板的处理
       new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset','找回密码')),//html模板的处理
+      new HtmlWebpackPlugin(getHtmlConfig('user-center','个人中心')),//html模板的处理
+      new HtmlWebpackPlugin(getHtmlConfig('user-center-update','修改个人信息')),//html模板的处理
 
 
 
