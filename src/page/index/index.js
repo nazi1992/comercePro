@@ -2,9 +2,11 @@
 * @Author: Administrator
 * @Date:   2017-10-13 23:01:39
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-22 20:02:25
+* @Last Modified time: 2017-10-31 23:09:34
 */
 'use strict';
+require('./index.css');
+
 require('page/common/nav-simple/index.js');
 require('page/common/nav/index.js');
 require('page/common/header/index.js');

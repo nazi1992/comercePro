@@ -4,19 +4,57 @@
 <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 
 <%=require('html-loader!./layout/head-common.html')%>
-<title>happymmall电商平台</title>
+<title><%=htmlWebpackPlugin.options.title%></title>
 </head>
 <body>
 	<%=require('html-loader!./layout/nav.html')%>
 
 <%=require('html-loader!./layout/header.html')%>
 
-<div class="page-wrap w">
-		<%=require('html-loader!./layout/nav-side.html')%>
-	<div class="content with-nav">
-		
+	<div class="w">
+		<ul class="keywords-list">
+			<li class="keywords-item">
+				<a href="./list.html?keyword=手机" target="_black" class="link">手机</a>
+				<a href="./list.html?keyword=手机" target="_black" class="link">数码</a>
+			</li><li class="keywords-item">
+				<a href="./list.html?keyword=电脑" target="_black" class="link">电脑</a>
+				<a href="./list.html?keyword=办公配件" target="_black" class="link">办公配件</a>
+			</li><li class="keywords-item">
+				<a href="./list.html?keyword=电视" target="_black" class="link">电视</a>
+				<a href="./list.html?keyword=空调" target="_black" class="link">空调</a>				<a href="./list.html?keyword=冰箱" target="_black" class="link">冰箱</a>
+				<a href="./list.html?keyword=洗衣机" target="_black" class="link">洗衣机</a>
+
+			</li><li class="keywords-item">
+				<a href="./list.html?keyword=厨卫家电" target="_black" class="link">厨卫家电</a>
+				<a href="./list.html?keyword=小家电" target="_black" class="link">小家电</a>
+			</li><li class="keywords-item">
+				<a href="./list.html?keyword=家装" target="_black" class="link">家装</a>
+				<a href="./list.html?keyword=家具" target="_black" class="link">家具</a>
+			</li><li class="keywords-item">
+				<a href="./list.html?keyword=个户化妆" target="_black" class="link">个户化妆</a>
+				<a href="./list.html?keyword=清洁用品" target="_black" class="link">清洁用品</a>
+				<a href="./list.html?keyword=纸品" target="_black" class="link">纸品</a>
+
+			</li><li class="keywords-item">
+				<a href="./list.html?keyword=母婴用品" target="_black" class="link">母婴用品</a>
+				<a href="./list.html?keyword=儿童玩具" target="_black" class="link">儿童玩具</a>
+				<a href="./list.html?keyword=童装童鞋" target="_black" class="link">童装童鞋</a>
+			</li><li class="keywords-item">
+				<a href="./list.html?keyword=鞋靴" target="_black" class="link">鞋靴</a>
+				<a href="./list.html?keyword=箱包" target="_black" class="link">箱包</a>
+				<a href="./list.html?keyword=钟表" target="_black" class="link">钟表</a>
+				<a href="./list.html?keyword=珠宝" target="_black" class="link">珠宝</a>
+			</li><li class="keywords-item">
+				<a href="./list.html?keyword=图书" target="_black" class="link">图书</a>
+				<a href="./list.html?keyword=音箱" target="_black" class="link">音箱</a>
+				<a href="./list.html?keyword=电子书" target="_black" class="link">电子书</a>
+			</li>
+			
+		</ul>
+		<div class="loadding">加载中-----</div>
 	</div>
-</div>
+		
+
 <%=require('html-loader!./layout/footer.html')%>
 
 </body>

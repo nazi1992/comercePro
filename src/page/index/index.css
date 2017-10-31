@@ -2,9 +2,49 @@
 * @Author: Administrator
 * @Date:   2017-10-14 14:49:40
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-19 20:09:21
+* @Last Modified time: 2017-10-31 23:42:22
 */
 body{
 	/*background: url(../../image/1.jpg);*/
-	font-size:50px;
+	
+}
+.keywords-list
+{
+	display: block;
+	background: #666;
+	width: 250px;
+	margin-right: 0px;
+	float: left;
+	height: 350px;
+	padding-bottom: 
+}
+.keywords-item
+{
+	padding:10px 10px 10px 20px;
+
+}
+.keywords-item .link
+{
+	color:#fff;
+}
+.keywords-item .link:hover
+{
+	color:red;
+
+}
+
+.keywords-item:hover
+{
+	background: #999;
+}
+.loadding
+{
+	float: left;
+	border:1px solid red;
+	text-align: center;
+	height: 350px;
+	line-height: 350px;
+	width:700px;
+	
+	margin-bottom: 30px;
 }
