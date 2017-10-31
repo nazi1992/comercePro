@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-19 22:34:02
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-26 23:50:00
+* @Last Modified time: 2017-10-30 23:57:40
 */
 var _mm = require('util/mm.js');
 var _user = {
@@ -73,6 +73,15 @@ var _user = {
 	updateUserInfo:function(userInfo,resolve,reject){
 		_mm.request({
 			url:_mm.getServerUrl('/user/update_information.do'),
+			method:'POST',
+			data:userInfo,
+			success:resolve,
+			error:reject
+		});
+	},
+	updatePassword:function(userInfo,resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/user/reset_password.do'),
 			method:'POST',
 			data:userInfo,
 			success:resolve,
