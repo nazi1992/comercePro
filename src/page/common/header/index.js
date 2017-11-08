@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-19 21:25:09
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-22 17:39:23
+* @Last Modified time: 2017-11-03 20:32:55
 */
 require('./index.css');
 var _mm = require('util/mm.js');
@@ -12,6 +12,7 @@ var header = {
 	init:function()
 	{
 		this.bindEvent();
+		this.onLoad();
 		
 		return this;
 	},

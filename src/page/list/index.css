@@ -1,0 +1,76 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-03 20:16:09
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-08 21:58:22
+*/
+.order_class li
+{
+	display: inline-block;
+	border :1px #ccc solid ;
+	width:100px;
+	text-align: center;
+	position: relative;
+	margin: 0px;
+	float: left;
+	color: #666;
+}
+.order_class .active
+{
+	background: red;
+	color: #fff;
+}
+.order_class .desc_sort
+{
+	position: absolute;
+	left:81px;
+}
+.order_class ul
+{
+	width:400px;
+}
+.sort1
+{
+	opacity: 1;
+}
+.sort2
+{
+	opacity: 0.5;
+}
+.list-p
+{
+	clear: both;
+	height: 308px;
+	margin-top:10px;
+}
+.order_class
+{
+	height: 20px;
+}
+.list-p ul li
+{
+	width: 180px;
+	height: 308px;
+	float:left;
+    margin: 10px 40px;
+   background: #fff;
+}
+.list-p li img
+{
+	height: 200px;
+	width:180px;
+}
+.list-p .p-price
+{
+	color:red;
+}
+.list-p .p-name
+{
+	text-decoration: none;
+	cursor: point;
+	color:#666;
+}
+.pagelation
+{
+	clear: both;
+}

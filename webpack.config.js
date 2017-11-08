@@ -29,6 +29,7 @@ var config = {
       'user-pass-update':['./src/page/user-pass-update/index.js'],//修改密码
       'user-center':['./src/page/user-center/index.js'],//个人信息
       'user-center-update':['./src/page/user-center-update/index.js'],//个人信息
+      'list':['./src/page/list/index.js'],//个人信息
 
       'common':['./src/page/common/index.js'],
       'result':['./src/page/result/index.js']
@@ -71,6 +72,7 @@ var config = {
       new HtmlWebpackPlugin(getHtmlConfig('result','用户操作')),//html模板的处理
       new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset','找回密码')),//html模板的处理
       new HtmlWebpackPlugin(getHtmlConfig('user-pass-update','修改密码')),//html模板的处理
+      new HtmlWebpackPlugin(getHtmlConfig('list','商品列表页')),//列表页
 
       new HtmlWebpackPlugin(getHtmlConfig('user-center','个人中心')),//html模板的处理
       new HtmlWebpackPlugin(getHtmlConfig('user-center-update','修改个人信息')),//html模板的处理

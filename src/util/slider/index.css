@@ -1,0 +1,9 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-02 21:32:26
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-02 21:39:48
+*/
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
