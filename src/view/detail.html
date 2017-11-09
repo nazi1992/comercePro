@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<%=require('html-loader!./layout/head-common.html')%>
+<title><%=htmlWebpackPlugin.options.title%>--happymmall电商平台</title>
+</head>
+<body>
+	<%=require('html-loader!./layout/nav.html')%>
+
+<%=require('html-loader!./layout/header.html')%>
+
+<div class="crumb">
+	<div class="w">
+		<div class="crumb-con" >
+			<a href="./index.html" class="link">MMALL</a>
+			<span>&gt;</span>
+			<a href="./user-center-update.html" class="link"><%=htmlWebpackPlugin.options.title%></a>
+		</div>
+	</div>
+</div>
+<div class="page-wrap w">
+	<div class="detail-top-img">
+			<div class="img-max">
+				<img src="http://img.happymmall.com/0093f5d3-bdb4-4fb0-bec5-5465dfd26363.jpeg">
+			</div>
+			<div class="img-min">
+				<ul>
+					<li>
+						<img src="http://img.happymmall.com/0093f5d3-bdb4-4fb0-bec5-5465dfd26363.jpeg">
+					</li>
+					<li>
+						<img src="http://img.happymmall.com/0093f5d3-bdb4-4fb0-bec5-5465dfd26363.jpeg">
+					</li>
+					<li>
+						<img src="http://img.happymmall.com/0093f5d3-bdb4-4fb0-bec5-5465dfd26363.jpeg">
+					</li>
+				</ul>
+			</div>
+	</div>
+	<div class="detail-right-info">
+		<div class="info-right">
+			<h2>手机</h2>
+			<p class="title-info">xxxxxxxxxxxxxxxxx
+	手机手机手机手机手机手机手机手机手机手机手机手机手机手机手机手机
+	手机手机手机手机手机手机手机手机手机手机手机手机手机手机手机手机手机手机
+	手机手机手机手机手机手机手机手机手机手机手机手机手机手机
+			</p>
+			<div  class="info-price">
+				<span class="product_desc">价格:</span>
+				<span class="product_price">$400</span>
+
+			</div>
+			<div  class="info-nums">
+				<span class="product_desc">描述:</span>
+				<div class="product_nums">
+					<span class="btn nums-del">-</span>
+						<input type="text" readonly="" value="1" />
+					<span class="btn nums-add">+</span>
+				</div>
+			</div>
+			<div class="getCart">
+				<div class="btn cart">加入购物车</div>
+			</div>
+		</div>
+	</div>
+	<div class="detail-bottom-info">
+		<div class="bottom-info">
+			<ul>
+				<li>商品详情</li>
+				<li>用户评论</li>	
+				<li>相关参数</li>
+			</ul>
+		</div>
+		<div class="bottom-detail">
+手机，又名移动电话，可以握在手上的移动电话机。早期又有大哥大(香港警匪片中的大哥人手一部)的俗称，是可以在较广范围内使用的便携式电话终端。手机分几种类型：2G、3G，目前已发展至4G时代。		</div>
+	</div>
+</div>
+<%=require('html-loader!./layout/footer.html')%>
+
+</body>
+</html> 
