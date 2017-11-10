@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-11-03 20:16:09
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-09 23:27:25
+* @Last Modified time: 2017-11-10 21:09:37
 */
 .detail-top-img ,.detail-right-info
 {
@@ -29,6 +29,9 @@
 .detail-top-img .img-min li
 {
 	float:left;
+}
+.detail-top-img .img-min li:hover
+{
 	border:red solid 1px;
 }
 .detail-top-img .img-min ul
@@ -69,6 +72,8 @@
 	font-weight: normal;
 	font-family: none;
 	height: 100px;
+	color: red;
+	text-indent: 2em;
 }
 .detail-right-info .product_price
 {
@@ -113,19 +118,43 @@
 {
 	float: left;
 	font-size: 20px;
+	height: 50px;
 	font-family: '微软雅黑';
 	width: 200px;
-	background: #fff;
+	background: #eee;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+}
+.detail-bottom-info .bottom-info li:hover
+{
+	float: left;
+	font-size: 20px;
+	height: 50px;
+	font-family: '微软雅黑';
+	width: 200px;
+	background: red;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+
 }
 .detail-bottom-info .bottom-info
 {
-	background: #fff;
+	background: #eee;
 	width: 1000px;
-	height: 20px;
+	height: 50px;
+	border-bottom:1px #cc0023 solid;
 }
 .detail-bottom-info .bottom-detail
 {
 	clear: both;
 	width: 1000px;
 	font-weight: normal;
+	text-indent:2em;
+	margin-top:20px;
+	margin-bottom:20px;
+
 }

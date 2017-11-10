@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-11-03 20:16:09
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-08 21:58:22
+* @Last Modified time: 2017-11-10 20:53:55
 */
 .order_class li
 {
@@ -67,7 +67,7 @@
 .list-p .p-name
 {
 	text-decoration: none;
-	cursor: point;
+	cursor: pointer;
 	color:#666;
 }
 .pagelation
