@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-11-03 20:16:09
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-10 20:53:55
+* @Last Modified time: 2017-11-12 15:30:29
 */
 .order_class li
 {
@@ -73,4 +73,15 @@
 .pagelation
 {
 	clear: both;
+}
+.err-tip
+{
+	padding: 0 10px;
+	height: 60px;
+	line-height: 60px;
+	color: #f60;
+	font-weight: bold;
+	text-align: center;
+	background: #eee;
+	font-size: 16px;
 }

@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-11-03 20:16:09
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-10 21:09:37
+* @Last Modified time: 2017-11-12 17:33:46
 */
 .detail-top-img ,.detail-right-info
 {
@@ -19,6 +19,7 @@
 {
 	width: 450px;
 	border:#ddd 1px solid;
+	height:525px; 
 
 }
 .detail-top-img .img-min
@@ -42,7 +43,7 @@
 }
 .detail-top-img .img-min li img
 {
-	width: 130px;
+	width: 90px;
 	height: 90px;
 }
 .detail-bottom-info
@@ -73,7 +74,7 @@
 	font-family: none;
 	height: 100px;
 	color: red;
-	text-indent: 2em;
+
 }
 .detail-right-info .product_price
 {
@@ -81,9 +82,9 @@
 	font-size: 35px;
 	padding-left:50px;
 }
-.detail-right-info .product_nums
+.detail-right-info .product_nums,.product_stock
 {
-	display: inline-block;
+	display: inline-block; 
 	padding-left:50px;
 
 
@@ -111,7 +112,7 @@
 }
 .getCart .cart
 {
-	margin:30px 100px; 
+	margin-top:10px 0px; 
 
 }
 .detail-bottom-info .bottom-info li
@@ -141,6 +142,10 @@
 	text-align: center;
 
 }
+.detail-bottom-info .bottom-info .active
+{
+	background: red;
+}
 .detail-bottom-info .bottom-info
 {
 	background: #eee;
@@ -157,4 +162,16 @@
 	margin-top:20px;
 	margin-bottom:20px;
 
+}
+/*错误信息*/
+.err-tip
+{
+	padding: 0 10px;
+	height: 60px;
+	line-height: 60px;
+	color: #f60;
+	font-weight: bold;
+	text-align: center;
+	background: #eee;
+	font-size: 16px;
 }
