@@ -1,0 +1,116 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-13 20:13:45
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-14 22:44:57
+*/
+.header-icon
+{
+	width: 1000px;
+	height: 30px;
+	font-size: 20px;
+	background: #eee;
+}
+.header-icon input,.header-icon-body input
+{
+	width:15px;
+}
+.header-icon .td_cell
+{
+	width: 10%;
+	text-align: left; 
+}
+.header-icon span
+{
+	display: inline-block;
+	border:0px;
+	padding: 0px;
+}
+.header-icon-body
+{
+	width: 1000px;
+}
+.header-icon-body .goods-info
+{
+	width:20%;
+}
+.header-icon-body .goods-info img
+{
+	width: 100px;
+	height: 120px;
+	float: left; 
+}
+.header-icon-body .goods-info span
+{
+	display:inline-block;
+	vertical-align: center;
+	padding-left:10px;
+	line-height: 120px;
+}
+.header-icon-body .goods-unitprice
+{
+	width: 20%;
+	padding-left:35px;
+}
+.header-icon-body .goods-nums
+{
+	width: 15%;
+	padding-left:-3px;
+}
+.header-icon-body .goods-all
+{
+	width: 20%;
+	padding-left:15px;
+}
+.header-icon-body .goods-nums .nums-add,.header-icon-body .goods-nums .nums-del
+{
+	border:1px solid #000;
+	width: 20px;
+	height: 20px;
+	display:inline-block;
+	float: left;
+	text-align: center;
+	line-height: 20px;
+	vertical-align: center;
+	cursor: pointer;
+}
+.header-icon-body .goods-nums input
+{
+	float: left;
+	width: 25px;
+	height: 18px;
+}
+.header-icon-body .goods-option a:link
+{
+	text-decoration: none;
+	color: #666;
+}
+.cart-footer 
+{
+	position: relative;
+	background: #eee;
+	height: 41px;
+	width: 1000px;
+	line-height: 41px;
+}
+.cart-footer .select-all input
+{
+	width: 15px;
+
+}
+.cart-footer .select-all
+{
+	margin-left:3px;
+}
+.cart-footer  .price-all
+{
+	position:absolute;
+	left: 800px;
+    top: 2px;
+}
+.cart-footer  .count-all
+{
+	position:absolute;
+	left: 908px;
+    top: 2px;
+}

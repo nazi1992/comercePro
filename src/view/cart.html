@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<%=require('html-loader!./layout/head-common.html')%>
+<title><%=htmlWebpackPlugin.options.title%>--happymmall电商平台</title>
+</head>
+<body>
+	<%=require('html-loader!./layout/nav.html')%>
+
+<%=require('html-loader!./layout/header.html')%>
+
+<div class="crumb">
+	<div class="w">
+		<div class="crumb-con" >
+			<a href="./index.html" class="link">MMALL</a>
+			<span>&gt;</span>
+			<a href="./user-center-update.html" class="link"><%=htmlWebpackPlugin.options.title%></a>
+		</div>
+	</div>
+</div>
+<div class="page-wrap w">
+	<div cart-header>
+		<table class="header-icon">
+				<tr>
+					<th class="td_cell">
+						<input type="text" class="select-input"/>
+						<span>全选</span>
+					</th>
+					<th class="td_cell goods-info">
+						商品信息
+					</th>
+					<th class="td_cell goods-unitprice">
+						单价
+					</th>
+					<th class="td_cell goods-nums">
+						数量
+					</th>
+					<th class="td_cell goods-all">
+						合计
+					</th>
+					<th class="td_cell goods-option">
+						操作
+					</th>
+				</tr>
+		</table>
+	</div>
+
+	<div cart-body>
+		<table class="header-icon-body">
+			<tr>
+				<td class="td_cell">
+					<input type="text" />
+				</td>
+				<td class="td_cell goods-info">
+					<img src="http://img.happymmall.com/6e01f79f-fbd8-462c-98ee-bc2db1596562.jpg"/>
+					<span class="goods-detail">xxxxx</span>
+				</td>
+				<td class="td_cell goods-unitprice">
+					$9999
+				</td>
+				<td class="td_cell goods-nums">
+					<span class="nums-del">-</span>
+					<input type="text" class="nums-nomal" value="211"></input>
+					<span class="nums-add">+</span>
+
+				</td>
+				<td class="td_cell goods-all">
+					$15154
+				</td>
+				<td class="td_cell goods-option">
+					<a href="./del.html">删除</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="cart-footer">
+		<div class="select-all">
+			<input type="text" name="" class="select-input"/>
+			<span>全选</span>
+			<a href="#">删除选中</a>
+		</div>
+		<div class="price-all">
+			<span>总价</span>
+			<span>￥5555</span>
+		</div>
+		<div class="count-all btn">
+			去结算
+		</div>
+	</div>
+
+</div>
+<%=require('html-loader!./layout/footer.html')%>
+
+</body>
+</html> 
