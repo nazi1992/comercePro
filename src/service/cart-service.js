@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-19 22:34:02
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-12 17:31:47
+* @Last Modified time: 2017-11-16 22:18:23
 */
 var _mm = require('util/mm.js');
 var _cart = {
@@ -20,6 +20,70 @@ var _cart = {
 			url:_mm.getServerUrl('/cart/add.do'),
 			data:productInfo,
 			success:resolve,
+			method:'POST',
+			error:reject
+		});
+	},
+	getCartList:function(resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/cart/list.do'),
+			success:resolve,
+			method:'POST',
+			error:reject
+		});
+	},
+	selectProduct:function(productId,resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/cart/select.do'),
+			success:resolve,
+			data:{
+				productId:productId
+			},
+			method:'POST',
+			error:reject
+		});
+	},
+	unselectProduct:function(productId,resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/cart/un_select.do'),
+			success:resolve,
+			data:{
+				productId:productId
+			},
+			method:'POST',
+			error:reject
+		});
+	},//取消全选
+	unselectAllProduct:function(resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/cart/un_select_all.do'),
+			success:resolve,
+			method:'POST',
+			error:reject
+		});
+	},//选中全部商品
+	selectAllProduct:function(resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/cart/select_all.do'),
+			success:resolve,
+			method:'POST',
+			error:reject
+		});
+	},//更新购物车商品数量
+	updateProduct:function(productInfo,resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/cart/update.do'),
+			success:resolve,
+			data:productInfo,
+			method:'POST',
+			error:reject
+		});
+	},//删除指定商品
+	deleteProduct:function(productIds,resolve,reject){
+		_mm.request({
+			url:_mm.getServerUrl('/cart/delete_product.do'),
+			success:resolve,
+			data:productIds,
 			method:'POST',
 			error:reject
 		});

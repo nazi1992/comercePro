@@ -1,0 +1,36 @@
+<h1>商品详情</h1>
+		<div class="goods-list">
+			<table>
+				<tr>
+					<th colspan="2">商品描述</th>
+					<th>价格</th>
+					<th>数量</th>
+					<th>小计</th>
+				</tr>
+				{{#orderItemVoList}}
+				<tr>
+					<td class="td-img">
+						<a href="./detail.html?productId={{productId}}">
+							<img src="{{imageHost}}{{productImage}}" alt="{{productName}}"/>
+						</a>
+						
+					</td>
+					<td class="td-detail">
+						<span class="goods-detail">{{productName}}</span>
+					</td>
+					<td class="price">
+						￥{{currentUnitPrice}}
+					</td>
+					<td>{{quantity}}</td>
+					<td>￥{{totalPrice}}</td>
+				</tr>
+				{{/orderItemVoList}}
+
+			</table>
+		</div>
+		<div class="gotoComputer">
+			<div class="priceDetail">
+				订单总价：<span class="priceAll">￥{{productTotalPrice}}</span>
+			</div>
+			<a href="./jgel.html" class="btn computer">去结算</a>
+		</div>

@@ -1,57 +1,99 @@
-<div class="detail-top-img">
-			<div class="img-max">
-				<img class="main-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}">
-			</div>
-			<div class="img-min">
-				<ul>
-				{{#subImages}}
-					<li class="img-item">
-						<img class="p-img" src="{{imageHost}}{{.}}" alt="{{name}}">
-					</li>
-				{{/subImages}}
+{{#notEmpty}}
+<div cart-header>
+		<table class="header-icon">
+				<tr>
+					<th class="td_cell">
+						{{#allChecked}}
+						<input type="checkbox" class="select-input-all" checked/>
+						{{/allChecked}}
+						{{^allChecked}}
+						<input type="checkbox" class="select-input-all"/>
+						{{/allChecked}}
+						<span>全选</span>
+					</th>
+					<th class="td_cell goods-info">
+						商品信息
+					</th>
+					<th class="td_cell goods-unitprice">
+						单价
+					</th>
+					<th class="td_cell goods-nums">
+						数量
+					</th>
+					<th class="td_cell goods-all">
+						合计
+					</th>
+					<th class="td_cell goods-option">
+						操作
+					</th>
+				</tr>
+		</table>
+	</div>
+
+	<div cart-body>
+	{{#cartProductVoList}}
+		<table class="header-icon-body" data-product-id="{{productId}}">
+			<tr>
+				<td class="td_cell">
+					{{#productChecked}}
+						<input type="checkbox" class="select-input" checked/>
+						{{/productChecked}}
+						{{^productChecked}}
+						<input type="checkbox" class="select-input"/>
+						{{/productChecked}}
+				</td>
+				<td class="td_cell goods-info">
+					<a class="link" href="./detail.html?productId={{productId}}">
+						 <img src="{{imageHost}}{{productMainImage}}" alt="{{productName}}"/>
+					 </a>
+				</td>
+				<td class="goods-detail">
+					<a class="link" href="./detail.html?productId={{productId}}">
+					{{productName}}</a>
+				</td>
+				<td class="td_cell goods-unitprice">
+					{{productPrice}}
+				</td>
+				<td class="td_cell goods-nums">
+					<span class="nums-del cartBtn">-</span>
+					<input type="text" class="nums-nomal" value="{{quantity}}" data-max="{{productStock}}"></input>
+					<span class="nums-add cartBtn">+</span>
+
+				</td>
+				<td class="td_cell goods-all">
+					{{productTotalPrice}}
+
+				</td>
+				<td class="td_cell goods-option">
+					<a href="#">删除</a>
+				</td>
+			</tr>
+		</table>
+	{{/cartProductVoList}}
+
+	</div>
 	
-				</ul>
-			</div>
-	</div>
-	<div class="detail-right-info">
-		<div class="info-right">
-			<h2>{{name}}</h2>
-			<p class="title-info">
-				{{subtitle}}
-			</p>
-			<div  class="info-price">
-				<span class="product_desc">价格:</span>
-				<span class="product_price">￥{{price}}</span>
-
-			</div>
-			<div  class="info-stock">
-				<span class="product_desc">库存:</span>
-				<span class="product_stock">{{stock}}</span>
-
-
-			</div>
-			<div  class="info-nums">
-				<span class="product_desc">描述:</span>
-				<div class="product_nums">
-					<span class="btn nums-del">-</span>
-						<input class="p-count" type="text" readonly="" value="1" />
-					<span class="btn nums-add">+</span>
-				</div>
-			</div>
-			<div class="getCart">
-				<div class="btn cart">加入购物车</div>
-			</div>
+	<div class="cart-footer">
+		<div class="select-all">
+						{{#allChecked}}
+						<input type="checkbox" class="select-input" checked/>
+						{{/allChecked}}
+						{{^allChecked}}
+						<input type="checkbox" class="select-input"/>
+						{{/allChecked}}
+			<span>全选</span>
+			<a href="#"  class="delete-select">删除选中</a>
 		</div>
-	</div>
-	<div class="detail-bottom-info">
-		<div class="bottom-info">
-			<ul>
-				<li class="active">详细描述</li>
-				<li>用户评论</li>	
-				<li>相关参数</li>
-			</ul>
+		<div class="price-all">
+			<span>总价</span>
+			<span>￥{{cartTotalPrice}}</span>
 		</div>
-		<div class="bottom-detail">
-		{{{detail}}}
-		</div>
+			<a href="./order-confirm.html" class="count-all btn">
+			去结算</a>
+			
 	</div>
+	{{/notEmpty}}
+	{{^notEmpty}}
+
+<p class="err-tip"></p>
+{{/notEmpty}}

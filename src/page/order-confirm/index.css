@@ -1,0 +1,207 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-13 20:13:45
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-21 22:49:15
+*/
+.address-item,.new-address
+{
+	width:200px;
+	border:2px #666 dashed;
+	display: inline-block;
+	margin: 5px;
+	text-align: center;
+	cursor: pointer;
+	height: 99px;
+}
+.address-item:hover
+{
+	border:2px red dashed;
+
+}
+.active
+{
+		border:2px red solid;
+		background: #eee;
+}
+.address-item .option
+{
+	text-align: right;
+	padding-right: 3px;
+}
+.new-address
+{
+	
+	padding:0px;
+	vertical-align: top;
+	line-height: 20px;
+
+}
+
+.new-address .address-add
+{
+	padding-top:30px;
+
+}
+.address-max
+{
+	padding:10px 0px 10px 5px;
+	border-bottom: 1px solid #eee;
+}
+.address
+{
+	padding:10px 0px 10px 5px;
+}
+
+.list-model
+{
+	clear: both;
+	padding-bottom: 50px;
+}
+.address-model
+{
+	background: #fff;
+	margin-bottom: 30px;
+}
+.list-model table
+{
+	width: 1000px;
+	font-family: '微软雅黑';
+	
+}
+.list-model h1
+{
+	border-bottom:1px solid #666;
+}
+.list-model td
+{
+	text-align: center;
+}
+.list-model table img
+{
+	width:100px;
+	height: 100px;
+	padding-left:20px;
+}
+.list-model .td-img
+{
+	width:120px;
+}
+.list-model .td-detail
+{
+	text-align: left;
+	font-size: 15px;
+	color:#666;
+	width: 200px;
+}
+.gotoComputer
+{
+	position:relative;
+	background: #e4e4e4;
+	height: 50px;
+}
+.priceDetail
+{
+	position: absolute;
+	left: 720px;
+    top: 10px;
+   
+}
+.priceDetail .priceAll
+{
+	 color:red;
+    font-size: 25px;
+}
+.computer
+{
+	position: absolute;
+	left:950px;
+	margin-top:5px;
+}
+/*
+增加收货地址
+ */
+.addAddress-model
+{
+	background: #eee;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+}
+.addAddress-model .add-body
+{
+	width: 600px;
+	/*height: 350px;*/
+	margin: 50px auto;
+	background: #fff;
+	font-family: '微软雅黑';
+	padding-bottom: 20px;
+}
+.addAddress-model  .add-header
+{
+	border-bottom: 30px;
+	border-bottom:1px solid #666;
+	position: relative;
+	margin-bottom: 20px;
+}
+.addAddress-model .close
+{
+	position: absolute;
+	top:0px;
+	left:586px;
+	cursor: pointer;
+}
+.addAddress-model h2
+{
+	padding-left:10px;
+	padding-bottom: 10px;
+}
+.add-main label
+{
+	display: block;
+	width: 120px;
+	float:left;
+	text-align: right;
+	padding-right: 10px;
+}
+.add-main 
+{
+
+	margin-left:10px;
+	font-size: 20px;
+}
+.add-main .item
+{
+	margin-bottom: 20px;
+}
+.add-main .btn
+{
+	margin-left: 140px;
+}
+.add-main input
+{
+	outline: none;
+	width: 200px;
+	height: 25px;
+}
+.add-main .imp
+{
+	color: red;
+	float:left;
+
+}
+.add-main .revicer-email label
+{
+	padding-left: 10px;
+}
+.add-main select
+{
+	margin-right: 30px;
+	width: 50px;
+	display: inline-block;
+	cursor: pointer;
+	height: 30px;
+}
