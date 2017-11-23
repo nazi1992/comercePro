@@ -1,11 +1,18 @@
 <h1>收货地址</h1>
 		{{#list}}
-		<div class="address-item active" data-id="{{id}}">
+		{{#isActive}}
+				<div class="address-item active" data-id="{{id}}">
+
+		{{/isActive}}
+		{{^isActive}}
+				<div class="address-item" data-id="{{id}}">
+
+		{{/isActive}}
 			<div class="address-max">{{receiverCity}}&nbsp;{{receiverProvince}}(<span>{{receiverName}}</span>收)</div>
 			<div class="address">{{receiverAddress}}<span class="phone">{{receiverPhone}}</span></div>
 			<div class="option">
-				<a href="#" class="link">编辑</a>
-				<a href="#" class="link">删除</a>
+				<a href="#" class="link edit">编辑</a>
+				<a href="#" class="link del">删除</a>
 			</div>
 		</div>
 		{{/list}}

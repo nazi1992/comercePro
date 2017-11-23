@@ -1,32 +1,40 @@
 <div class="add-header">
+{{#isUpdate}}
+				<h2 >更新地址</h2>
+
+{{/isUpdate}}
+{{^isUpdate}}
 				<h2 >使用新地址</h2>
+
+{{/isUpdate}}
 				<span class="close">X</span>
 			</div>
 			<div class="add-main">
 				<div class="item revicer-name">
 				<span class="imp">*</span>	<label for="revicer-name">收件人姓名:</label>
-					<input type="text" id="revicer-name" placeholder="请输入姓名">
+					<input type="text" id="revicer-name" value="{{data.receiverName}}" placeholder="请输入姓名">
 				</div>
 				<div class="  item  revicer-city">
 					<span class="imp">*</span><label for="revicer-name">所在城市:</label>
-					<select>
-							<option>成都</option>
+					<select id="province">
 					</select>
-					<select>
-							<option>成都</option>
+					<select id="city">
+					<option>请选择<option>
 					</select>
 				</div>
 				<div class="item  revicer-address">
 					<span class="imp">*</span><label for="revicer-address">详细地址:</label>
-					<input type="text" id="revicer-address" placeholder="请输入地址">
+					<input type="text" id="revicer-address" placeholder="请输入地址" value="{{data.receiverAddress}}" >
 				</div>
 				<div class="item revicer-phone">
 					<span class="imp">*</span><label for="revicer-phone">收件人手机:</label>
-					<input type="text" id="revicer-phone" placeholder="请输入11位手机好">
+					<input type="text" id="revicer-phone" placeholder="请输入11位手机好" value="{{data.receiverPhone}}" >
 				</div>
 				<div class="item revicer-email">
 					<label for="revicer-email">邮政编码:</label>
-					<input type="text" id="revicer-email" placeholder="请输入邮编">
+					<input type="text" id="revicer-email" placeholder="请输入邮编" value="{{data.receiverZip}}" >
 				</div>
-				<div class="btn submit">保存收货地址</div>
+				<div class="btn submit">
+					<input type="hidden" value="{{data.id}}" id="receiver-id">
+				保存收货地址</div>
 			</div>
