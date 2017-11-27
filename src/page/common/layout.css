@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-18 21:17:17
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-10-26 21:43:13
+* @Last Modified time: 2017-11-26 21:21:05
 */
 /**
  * css retset ，把浏览器通用的元素祛除
@@ -117,4 +117,15 @@ input[type='checkbox']
 	border:1px solid #ddd;
 	border-radius: 5px;
 	opacity: 1;
+}
+.err-tip
+{
+	padding: 0 10px;
+	height: 60px;
+	line-height: 60px;
+	color: #f60;
+	font-weight: bold;
+	text-align: center;
+	background: #eee;
+	font-size: 16px;
 }

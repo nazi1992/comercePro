@@ -31,8 +31,10 @@ var config = {
       'user-center-update':['./src/page/user-center-update/index.js'],//个人信息
       'list':['./src/page/list/index.js'],//商品列表页
       'detail':['./src/page/detail/index.js'],//商品详情页
-      'cart':['./src/page/cart/index.js'],//商品详情页
-      'order-confirm':['./src/page/order-confirm/index.js'],//商品详情页
+      'cart':['./src/page/cart/index.js'],//购物车页
+      'order-confirm':['./src/page/order-confirm/index.js'],//订单确认页
+      'order-list':['./src/page/order-list/index.js'],//订单列表页
+      'order-detail':['./src/page/order-detail/index.js'],//订单列表页
 
       'common':['./src/page/common/index.js'],
       'result':['./src/page/result/index.js']
@@ -78,7 +80,9 @@ var config = {
       new HtmlWebpackPlugin(getHtmlConfig('list','商品列表页')),//列表页
       new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情页')),//列表页
       new HtmlWebpackPlugin(getHtmlConfig('cart','购物车')),//购物车
-      new HtmlWebpackPlugin(getHtmlConfig('order-confirm','订单确认页')),//购物车
+      new HtmlWebpackPlugin(getHtmlConfig('order-confirm','订单确认页')),//订单确认页
+      new HtmlWebpackPlugin(getHtmlConfig('order-list','订单列表页')),//订单列表页
+      new HtmlWebpackPlugin(getHtmlConfig('order-detail','订单详情页')),//订单列表页
 
       new HtmlWebpackPlugin(getHtmlConfig('user-center','个人中心')),//html模板的处理
       new HtmlWebpackPlugin(getHtmlConfig('user-center-update','修改个人信息')),//html模板的处理
