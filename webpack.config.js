@@ -13,6 +13,7 @@ var getHtmlConfig = function(name,title)
 	return{
 		template:'./src/view/'+name+'.html', //目标文件
  		filename : 'view/'+name+'.html',//编译后文件
+    favicon:'./favicon.ico',
  	  title:title,
   	inject:true,
  		hash:true,
@@ -35,6 +36,7 @@ var config = {
       'order-confirm':['./src/page/order-confirm/index.js'],//订单确认页
       'order-list':['./src/page/order-list/index.js'],//订单列表页
       'order-detail':['./src/page/order-detail/index.js'],//订单列表页
+      'order-payment':['./src/page/order-payment/index.js'],//订单列表页
 
       'common':['./src/page/common/index.js'],
       'result':['./src/page/result/index.js']
@@ -83,6 +85,7 @@ var config = {
       new HtmlWebpackPlugin(getHtmlConfig('order-confirm','订单确认页')),//订单确认页
       new HtmlWebpackPlugin(getHtmlConfig('order-list','订单列表页')),//订单列表页
       new HtmlWebpackPlugin(getHtmlConfig('order-detail','订单详情页')),//订单列表页
+      new HtmlWebpackPlugin(getHtmlConfig('order-payment','订单支付页')),//订单支付页
 
       new HtmlWebpackPlugin(getHtmlConfig('user-center','个人中心')),//html模板的处理
       new HtmlWebpackPlugin(getHtmlConfig('user-center-update','修改个人信息')),//html模板的处理

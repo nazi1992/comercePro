@@ -1,0 +1,41 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-26 20:33:28
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-29 20:35:49
+*/
+/*
+订单信息
+ */
+.page-wrap
+{
+	text-align: center;
+	font-size: 18px;
+	font-family: '微软雅黑';
+	background: #fff;
+	font-weight: bold;
+}
+.page-wrap .payment-tips
+{
+	color: #666;
+	margin: 20px 0px 20px 0px;
+}
+.payment-desc
+{
+	color: red;
+	padding-left: 30px;
+
+}
+.img-con img
+{
+	width: 228px;
+	height: 228px;
+	text-align: center;
+
+}
+.img-con{
+	margin-top: 10px;
+	text-align: center;
+	display: inline-block;
+
+}

@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-11-03 20:16:09
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-23 22:15:54
+* @Last Modified time: 2017-11-29 20:57:08
 */
 require('./index.css');
 require('page/common/nav/index.js');
@@ -38,11 +38,11 @@ var page = {
 			_this.data.selectedAddressId = $(this).data('id');
 		});
 		//订单的提交
-		$(document).on('click','.order-submit',function(){
+		$(document).on('click','.computer',function(){
 			var shippingId = _this.data.selectedAddressId;
-			if(shipping){
+			if(shippingId){
 				_order.createOrder({shippingId:shippingId},function(res){
-					window.location.href="./payment.html?orderNumber="+res.orderNo;
+					window.location.href="./order-payment.html?orderNumber="+res.orderNo;
 				},function(errMsg){
 					_mm.errorTips(errMsg);
 				})

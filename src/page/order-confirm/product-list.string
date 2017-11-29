@@ -32,5 +32,5 @@
 			<div class="priceDetail">
 				订单总价：<span class="priceAll">￥{{productTotalPrice}}</span>
 			</div>
-			<a href="./jgel.html" class="btn computer">去结算</a>
+			<a href="#" class="btn computer">去结算</a>
 		</div>
