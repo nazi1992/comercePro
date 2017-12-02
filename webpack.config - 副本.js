@@ -57,10 +57,10 @@ var config = {
       	{ test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]' },//字体和图片的处理
         { test: /\.string$/,
           loader:'html-loader',
-          // query:{
-          //   minimize:true,//做最小化的压缩
-          //   removeAttributeQuotes:false//是否删除属性上的引号
-          // }
+          query:{
+            minimize:true,//做最小化的压缩
+            removeAttributeQuotes:false//是否删除属性上的引号
+          }
         }
 
      ]
